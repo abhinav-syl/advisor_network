@@ -1,0 +1,25 @@
+<hmtl>
+    <head>
+        <title>register</title>
+    </head>
+    <p>User Register</p>
+    <div>
+       <form action="" method="post">
+
+       {% csrf_token %}
+
+       <label for="name">Your name: </label>
+       <input id="name" type="text" name="name" max_length= "100">
+
+       <label for="email">Your email: </label>
+       <input id="email" type="text" name="email" max_length= "100">
+            
+       <label for="password">Your password: </label>
+       <input id="password" type="text" name="password" max_length= "100">
+
+       <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+        </div>
+
+    </html>

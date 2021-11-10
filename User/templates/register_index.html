@@ -1,0 +1,13 @@
+<hmtl>
+    <head>
+        <title>Users</title>
+    </head>
+    <p>user details</p>
+    <div>
+    {% for user in rg %}
+        <h5 class="card-title">{{ user.name }}</h5>
+        <p class="card-text">{{ user.email }}</p>
+        
+    {% endfor %}
+    </div>
+    </html>

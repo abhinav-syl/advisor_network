@@ -1,0 +1,15 @@
+<hmtl>
+    <head>
+        <title>booking details</title>
+    </head>
+    <p>booking</p>
+    <div>
+    {% for book in lg %}
+        <h5>{{ book.booking_time }}</h5>
+        <p>{{ book.advisor_id }}</p>
+        
+        <p>{{ book.booking_id }}</p>
+        
+    {% endfor %}
+    </div>
+    </html>

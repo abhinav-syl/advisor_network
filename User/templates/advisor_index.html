@@ -1,0 +1,14 @@
+<hmtl>
+    <head>
+        <title>admin_names</title>
+    </head>
+    <p>advisor</p>
+    <div>
+    {% for advisor in ad %}
+        <h5 class="card-title">{{ advisor.name }}</h5>
+        <p class="card-text">{{ advisor.url }}</p>
+        <p class="card-text">{{ advisor.advisor_id }}</p>
+        
+    {% endfor %}
+    </div>
+    </html>

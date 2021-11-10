@@ -1,0 +1,26 @@
+<hmtl>
+    <head>
+        <title>Booking</title>
+    </head>
+    <p>User Login</p>
+    <div>
+       <form action="" method="post">
+
+       {% csrf_token %}
+
+       <label for="booking_time">Booking time: </label>
+       <input id="booking_time" type="text" name="booking_time" max_length= "20">
+
+       <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+        </div>
+    <div>
+       
+        <p>welcome</p>
+        <h5>{{ lg.booking_time}}</h5>
+        <h5>{{ lg.booking_id}}</h5>
+    
+
+    </div>
+    </html>
